@@ -8,7 +8,7 @@ class FrenchDeck:
     suit_values = dict(spades=3, hearts=2, diamonds=1, clubs=0)
 
     def __init__(self):
-        self._cards = [Card(rank, suit) for suit in self.suits for rank in self.ranks]
+        self._cards = [Card(rank, suit) for suit in self.suits for rank in self.ranks] # 初始化牌组属性，包含52张牌
 
     def __len__(self):
         return len(self._cards)
